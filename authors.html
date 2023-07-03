@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La Maison du Livre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+</head>
+<body>
+  <script>
+    // Répéter les catégories
+const categoryList = document.querySelector('.category-list');
+const categoryItems = document.querySelectorAll('.category-item');
+
+categoryList.innerHTML += categoryList.innerHTML;
+
+// Ajouter une classe pour définir la largeur de défilement
+categoryList.classList.add('scrolling');
+
+// Obtenir la largeur totale du défilement
+let totalWidth = 0;
+categoryItems.forEach(item => {
+  totalWidth += item.offsetWidth + parseInt(getComputedStyle(item).marginRight);
+});
+categoryList.style.width = `${totalWidth}px`;
+
+  </script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a></li>
+        <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#"><i class="fas fa-search"></i> Recherche</a></li>
+        <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
+        <li><a href="#"><i class="fas fa-comment"></i>Citations</a></li>
+        <li><a href="contacts.html"><i class="fas fa-info"></i> About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <!-- Bannière principale avec titre accrocheur et image -->
+      <h1 class="title">La Maison du Livre</h1>
+      <img src="images/banner-image.jpg" alt="Bannière du site">
+    </section>
+
+    <section class="search">
+      <!-- Section de recherche avec barre de recherche et bouton -->
+      <div class="search-container">
+      <input type="text" placeholder="Rechercher des livres...">
+      <i class="fas fa-search"></i>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Catégories</h2>
+      <div class="category-scroll">
+        <ul class="category-list">
+          <li class="category-item">Fiction</li>
+          <li class="category-item">Science-fiction</li>
+          <li class="category-item">Romance</li>
+          <li class="category-item">Mystère et suspense</li>
+          <li class="category-item">Policier</li>
+          <li class="category-item">Fantaisie</li>
+          <li class="category-item">Aventure</li>
+          <li class="category-item">Biographie</li>
+          <li class="category-item">Histoire</li>
+          <li class="category-item">Sciences et technologie</li>
+          <li class="category-item">Développement personnel</li>
+          <li class="category-item">Arts et culture</li>
+          <li class="category-item">Voyage</li>
+          <li class="category-item">Cuisine et gastronomie</li>
+          <li class="category-item">Santé et bien-être</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="recommended-books">
+      <!-- Section des livres recommandés -->
+      <h2>Livres Recommandés</h2>
+      <div class="book-container">
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="THE IMPERFECTIONS OF MEMORY">
+            <h3>Livre 1</h3>
+            <p>Auteur du livre 1</p>
+        </div>
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="A MILLION TO ONE">
+            <h3>Livre 2</h3>
+            <p>Auteur du livre 2</p>
+        </div>
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="THE MIND OF A LEADER">
+            <h3>Livre 3</h3>
+            <p>Auteur du livre 3</p>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="Livre 4">
+            <h3>Livre 4</h3>
+            <p>Auteur du livre 4</p>
+        </div>
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="Livre 4">
+            <h3>Livre 5</h3>
+            <p>Auteur du livre 5</p>
+        </div>
+        <div class="book">
+            <img class="book-image" src="images/book0.jpg" alt="Livre 4">
+            <h3>Livre 6</h3>
+            <p>Auteur du livre 6</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Contenu du footer -->
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>A propos</h3>
+        <ul>
+          <li><a href="#">Qui sommes-nous</a></li>
+          <li><a href="#">Notre équipe</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow us</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/profile.php?id=100090084822362&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://chat.whatsapp.com/J8n8USSrfkClogaoKHf6YG"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://t.me/lamaisondulivre1"><i class="fab fa-telegram"></i></a></li>
+        </ul>
+      </div>           
+    </div>
+  </footer>
+  
+</body>
+</html>
