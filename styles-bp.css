@@ -216,7 +216,9 @@ body img {
   background-color: #8c5502;
 }
 
-
+.logo {
+  margin-right: 600px; /* Ajoute un espacement supplémentaire à droite pour le logo */
+}
 
 
 
