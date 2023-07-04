@@ -193,7 +193,9 @@ body img {
   text-decoration: underline;
 }
 
- 
+.logo {
+  margin-right: 600px; /* Ajoute un espacement supplémentaire à droite pour le logo */
+}
 
 
 
