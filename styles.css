@@ -78,6 +78,10 @@ header {
     width: 200px;
     height: auto;
   }
+
+  .book-image6 {
+    height: 270px;
+  }
 .book-container {
     display: flex;
     justify-content: center;

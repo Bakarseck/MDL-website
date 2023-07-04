@@ -158,7 +158,7 @@ body img {
 
 .description {
   margin-top: 40px;
-  margin-bottom: 250px; /* Ajoute un espace de 40 pixels en bas */
+  margin-bottom: 0; /* Ajoute un espace de 40 pixels en bas */
 }
 .book-landing{
   margin-top: 40px;
