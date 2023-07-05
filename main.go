@@ -22,6 +22,5 @@ func main() {
 	log.Println("Server Started at Port:8080")
 	log.Println("http://localhost:8080")
 
-	// Start the HTTP server
 	http.ListenAndServe(":8080", nil)
 }

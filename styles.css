@@ -2,239 +2,240 @@
 header {
   background-color: #ff9900;
   padding: 20px;
-  }
-  
-  .nav,
-  header {
+}
+
+.nav,
+header {
   background-color: #ff9900;
-  }
-  
-  nav ul {
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
   display: inline-flex;
   align-items: center;
   margin-right: 10px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
   text-decoration: none;
   color: white;
   display: flex;
   align-items: center;
-  }
-  
-  nav ul li a i {
+}
+
+nav ul li a i {
   margin-right: 5px;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
   color: #8c5502;
-  }
-  
-  /* Exemple de style pour la bannière principale */
-  .banner {
+}
+
+/* Exemple de style pour la bannière principale */
+.banner {
   text-align: center;
   padding: 50px;
-  }
-  
-  .banner h1 {
+}
+
+.banner h1 {
   font-size: 32px;
   color: #333;
-  }
-  
-  /* Exemple de style pour la section de recherche */
-  .search {
+}
+
+/* Exemple de style pour la section de recherche */
+.search {
   background-color: #f0f0f0;
   padding: 10px;
   display: flex;
   justify-content: center;
-  }
-  
-  .search-container {
+}
+
+.search-container {
   height: 25px;
   width: 400px;
   display: flex;
   align-items: center;
   background-color: white;
   padding: 5px;
-  }
-  
-  .search-container input[type="text"] {
+}
+
+.search-container input[type="text"] {
   flex-grow: 1;
   border: none;
   outline: none;
-  }
-  
-  .search-container i {
+}
+
+.search-container i {
   margin-left: 5px;
-  }
-  
-  .book-image {
+}
+
+.book-image {
   width: 200px;
   height: auto;
-  }
-  
-  .book-image6 {
+}
+
+.book-image6 {
   height: 270px;
-  }
-  
-  .book-container {
+}
+
+.book-container {
   display: flex;
   justify-content: center;
-  }
-  
-  .book {
+}
+
+.book {
   text-align: center;
   margin: 0 20px;
-  }
-  
-  .book-image {
+}
+
+.book-image {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .book h3 {
+}
+
+.book h3 {
   color: #333;
-  }
-  
-  .book p {
+}
+
+.book p {
   color: #666;
-  }
-  
-  .book:hover {
+}
+
+.book:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
-  }
-  
-  .footer {
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
   background-color: #ff9900;
   color: #ffffff;
-  padding: 20px 0;
-  margin-top: 70px;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
   flex: 1;
   text-align: center;
-  }
-  
-  .footer-section h3 {
+}
+
+.footer-section h3 {
   margin-bottom: 10px;
-  }
-  
-  .footer-section ul,
-  .social-links {
+}
+
+.footer-section ul,
+.social-links {
   list-style-type: none;
   padding: 0;
-  }
-  
-  .footer-section ul li,
-  .social-links li {
+}
+
+.footer-section ul li,
+.social-links li {
   margin-bottom: 5px;
-  }
-  
-  .footer-section ul li a,
-  .social-links li a {
+}
+
+.footer-section ul li a,
+.social-links li a {
   color: #ffffff;
   text-decoration: none;
-  }
-  
-  .social-links {
+}
+
+.social-links {
   display: flex;
   justify-content: center;
-  }
-  
-  .social-links li {
+}
+
+.social-links li {
   margin: 0 5px;
-  }
-  
-  .social-links li a {
+}
+
+.social-links li a {
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
-  }
-  
-  .fa-brands {
+}
+
+.fa-brands {
   color: white;
-  }
-  
-  body {
+}
+
+body {
   font-family: "Montserrat", sans-serif;
-  }
-  
-  body h3 {
+}
+
+body h3 {
   text-decoration: underline;
-  }
-  
-  .title {
+}
+
+.title {
   font-family: "Montserrat", sans-serif;
   color: black;
-  }
-  
-  .category-scroll,
-  .category-list {
+}
+
+.category-scroll,
+.category-list {
   overflow-x: auto;
   white-space: nowrap;
   margin: 0;
   padding: 0;
-  }
-  
-  .category-scroll {
+}
+
+.category-scroll {
   overflow: hidden;
   width: 100%;
-  }
-  
-  .category-list {
+}
+
+.category-list {
   display: flex;
   animation: scroll-left 10s linear infinite;
-  }
-  
-  .category-item {
+}
+
+.category-item {
   padding: 10px 20px;
   background-color: orange;
   color: white;
   margin-right: 10px;
-  }
-  
-  @keyframes scroll-left {
+}
+
+@keyframes scroll-left {
   0% {
-  transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-  transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-  }
-  
-  .logo {
+}
+
+.logo {
   margin-right: 600px;
-  }
-  
-  .overlay,
-  .popup {
+}
+
+.overlay,
+.popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  }
-  
-  .overlay {
+}
+
+.overlay {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: none;
-  }
-  
-  .popup {
+}
+
+.popup {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -246,19 +247,19 @@ header {
   display: none;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  }
-  
-  .popup h2 {
+}
+
+.popup h2 {
   margin-top: 0;
   font-size: 24px;
-  }
-  
-  .popup p {
+}
+
+.popup p {
   margin-bottom: 20px;
   font-size: 16px;
-  }
-  
-  .popup button {
+}
+
+.popup button {
   display: block;
   margin: 0 auto;
   background-color: #fff;
@@ -269,21 +270,19 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   cursor: pointer;
-  }
-  
-  body.popup-active {
+}
+
+body.popup-active {
   overflow: hidden;
-  }
-  
-  .popup {
+}
+
+.popup {
   max-height: 400px;
   overflow-y: scroll;
-  }
-  
-  .acceptBtn:hover,
-  .refuseBtn:hover {
+}
+
+.acceptBtn:hover,
+.refuseBtn:hover {
   color: #000000;
   background-color: #8c5502;
-  }
-  
-  
+}
