@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maison du Livre {{template "title" . }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Lien vers ton fichier CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a></li>
+                <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> Recherche</a></li>
+                <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
+                <li><a href="citations.html"><i class="fas fa-comment"></i>Citations</a></li>
+                <li><a href="contacts.html"><i class="fas fa-info"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{template "content" .}}
+    <footer class="footer">
+        <!-- Contenu du footer -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="us.html">Qui sommes-nous</a></li>
+                    <li><a href="us.html">Notre équipe</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                    <li><a href="politiques.html">Politique de confidentialité</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=100090084822362&mibextid=ZbWKwL"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://chat.whatsapp.com/J8n8USSrfkClogaoKHf6YG"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                    <li><a href="https://t.me/lamaisondulivre1"><i class="fab fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

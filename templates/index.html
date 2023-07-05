@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Maison du Livre</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
-  <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+{{define "title"}} | Home {{end}}
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+{{define "content"}}
+  <!-- <div class="overlay">
 
-  <script src="main.js" defer></script>
-</head>
-<body>
-  <div class="overlay"></div>
+  </div>
 
   <div class="popup">
     <h2>⚠️ Avertissement ⚠️</h2>
@@ -100,25 +90,12 @@ categoryItems.forEach(item => {
 });
 categoryList.style.width = `${totalWidth}px`;
 
-  </script>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a></li>
-        <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
-        <li><a href="#"><i class="fas fa-search"></i> Recherche</a></li>
-        <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
-        <li><a href="citations.html"><i class="fas fa-comment"></i>Citations</a></li>
-        <li><a href="contacts.html"><i class="fas fa-info"></i> About</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  </script> -->
   <main>
     <section class="banner">
       <!-- Bannière principale avec titre accrocheur et image -->
       <h1 class="title">La Maison du Livre</h1>
-      <img src="images/banner-image.jpg" alt="Bannière du site">
+      <img src="../assets/images/banners/banner-image.jpg" alt="Bannière du site">
     </section>
 
     <section class="search">
@@ -133,21 +110,9 @@ categoryList.style.width = `${totalWidth}px`;
       <h2>Catégories</h2>
       <div class="category-scroll">
         <ul class="category-list">
-          <li class="category-item">Fiction</li>
-          <li class="category-item">Science-fiction</li>
-          <li class="category-item">Romance</li>
-          <li class="category-item">Mystère et suspense</li>
-          <li class="category-item">Policier</li>
-          <li class="category-item">Fantaisie</li>
-          <li class="category-item">Aventure</li>
-          <li class="category-item">Biographie</li>
-          <li class="category-item">Histoire</li>
-          <li class="category-item">Sciences et technologie</li>
-          <li class="category-item">Développement personnel</li>
-          <li class="category-item">Arts et culture</li>
-          <li class="category-item">Voyage</li>
-          <li class="category-item">Cuisine et gastronomie</li>
-          <li class="category-item">Santé et bien-être</li>
+          {{range .Category }}
+            <li class="category-item">{{.}}</li>
+          {{end}}
         </ul>
       </div>
     </section>
@@ -215,36 +180,4 @@ categoryList.style.width = `${totalWidth}px`;
     </section>
     
   </main>
-
-  <footer class="footer">
-    <!-- Contenu du footer -->
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>A propos</h3>
-        <ul>
-          <li><a href="us.html">Qui sommes-nous</a></li>
-          <li><a href="us.html">Notre équipe</a></li>
-          <li><a href="contacts.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Liens utiles</h3>
-        <ul>
-          <li><a href="conditions.html">Conditions d'utilisation</a></li>
-          <li><a href="politiques.html">Politique de confidentialité</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Follow us</h3>
-        <ul class="social-links">
-          <li><a href="https://www.facebook.com/profile.php?id=100090084822362&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://chat.whatsapp.com/J8n8USSrfkClogaoKHf6YG"><i class="fab fa-whatsapp"></i></a></li>
-          <li><a href="https://t.me/lamaisondulivre1"><i class="fab fa-telegram"></i></a></li>
-        </ul>
-      </div>           
-    </div>
-  </footer>
-  
-</body>
-</html>
+{{end}}
