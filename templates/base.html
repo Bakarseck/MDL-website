@@ -16,15 +16,14 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a></li>
-                <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="#"><i class="fas fa-search"></i> Recherche</a></li>
-                <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
-                <li><a href="citations.html"><i class="fas fa-comment"></i>Citations</a></li>
-                <li><a href="contacts.html"><i class="fas fa-info"></i> About</a></li>
-            </ul>
+        <a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a>
+        <nav class=".nav">
+            <a href="#"><i class="fas fa-home"></i> <span class="nav-links-text">Accueil</span> </a>
+            <a href="#"><i class="fas fa-search"></i> <span class="nav-links-text">Recherche</span> </a>
+            <a href="/authors"><i class="fas fa-user"></i> <span class="nav-links-text">Auteurs</span> </a>
+            <a href="/citations"><i class="fas fa-comment"></i> <span class="nav-links-text">Citations</span> </a>
+            <a href="/about"><i class="fas fa-info"></i> <span class="nav-links-text">About</span> </a>
+            <a href="/contacts"><i class="fas fa-info"></i> <span class="nav-links-text">Contact</span> </a>
         </nav>
     </header>
     {{template "content" .}}

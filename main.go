@@ -6,11 +6,17 @@ import (
 	"net/http"
 )
 
-
 func main() {
 
 	routes := map[string]func(http.ResponseWriter, *http.Request){
-		"/": handlers.IndexHandler,
+		"/":           handlers.IndexHandler,
+		"/about":      handlers.AboutHandler,
+		"/authors":    handlers.AuthorHandler,
+		"/contacts":   handlers.ContactHandler,
+		"/books":      handlers.BooksHandler,
+		"/book":       handlers.BookHandler,
+		"/citations":  handlers.CitationHandler,
+		"/conditions": handlers.ConditionHandler,
 	}
 
 	for path, handler := range routes {

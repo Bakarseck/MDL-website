@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>La Maison du Livre</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
-  <link rel="stylesheet" href="styles-bp.css"> <!-- Lien vers ton fichier CSS -->
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
-</head>
-<body>
-  <header>
-    <!-- En-tête avec le logo et la barre de navigation -->
-      <nav>
-        <ul>
-          <li><a href="#"><span class="logo"><i class="fas fa-book"></i>LMD</span></a></li>
-          <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
-          <li><a href="#"><i class="fas fa-search"></i> Recherche</a></li>
-          <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
-          <li><a href="#"><i class="fas fa-comment"></i>Citations</a></li>
-          <li><a href="contacts.html"><i class="fas fa-info"></i> About</a></li>
-        </ul>
-      </nav>
-  </header>
+{{ define "content" }}
 
   <main>
     <section class="banner">
@@ -67,35 +43,4 @@
 
   </section>
 
-  <footer class="footer">
-    <!-- Contenu du footer -->
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>A propos</h3>
-        <ul>
-          <li><a href="#">Qui sommes-nous</a></li>
-          <li><a href="#">Notre équipe</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Liens utiles</h3>
-        <ul>
-          <li><a href="#">Conditions d'utilisation</a></li>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Follow us</h3>
-        <ul class="social-links">
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-      </div>           
-    </div>
-  </footer>
-  
-</body>
-</html>
+{{ end }}  

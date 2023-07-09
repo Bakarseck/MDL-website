@@ -10,24 +10,6 @@
 
 </head>
 <body>
-  <script>
-    // Répéter les catégories
-const categoryList = document.querySelector('.category-list');
-const categoryItems = document.querySelectorAll('.category-item');
-
-categoryList.innerHTML += categoryList.innerHTML;
-
-// Ajouter une classe pour définir la largeur de défilement
-categoryList.classList.add('scrolling');
-
-// Obtenir la largeur totale du défilement
-let totalWidth = 0;
-categoryItems.forEach(item => {
-  totalWidth += item.offsetWidth + parseInt(getComputedStyle(item).marginRight);
-});
-categoryList.style.width = `${totalWidth}px`;
-
-  </script>
   <header>
     <nav>
       <ul>
